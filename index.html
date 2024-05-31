@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple StopWatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Vina Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="grid place-content-center align-middle h-svh">
+    <div class="bg-white 2xl:p-20 xl:p-20 p-5 mx-auto w-full shadow-[-6px_6px_#3f454f] rounded-xl border-zinc-950 border ">
+        <h1 class="2xl:text-9xl xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-left mb-10 text-zinc-800 grid 2xl:grid-cols-[20%_10%_20%_10%_20%] grid-cols-[20%_5%_20%_5%_20%] gap-5 table-fixed">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span>:</span>
+            <span id="tens">00</span>
+        </h1>
+        <div class="flex justify-center gap-4">
+            <button
+                class="btn bg-white shadow-[-4px_4px_#3f454f] hover:shadow-[0px_0px_#3f454f] transition-all hover:bg-white hover:text-zinc-950 text-zinc-800 uppercase text-xl"
+                id="start">Start</button>
+            <button
+                class="btn bg-white shadow-[-4px_4px_#3f454f] hover:shadow-[0px_0px_#3f454f] transition-all hover:bg-white hover:text-zinc-950 text-zinc-800 uppercase text-xl"
+                id="stop">Stop</button>
+            <button
+                class="btn bg-white shadow-[-4px_4px_#3f454f] hover:shadow-[0px_0px_#3f454f] transition-all hover:bg-white hover:text-zinc-950 text-zinc-800 uppercase text-xl"
+                id="clear">Clear</button>
+        </div>
+    </div>
+
+    <script src="more.js"></script>
+</body>
+
+</html>
